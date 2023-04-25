@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.img-area{
+    background-image: url(../registro/loga.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
+.principal{
+    transform: translate(0%,-100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lado-esquerdo{
+    transform: translate(0%,-20%);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-esquerda{
+    width: 25vw;
+}
+
+.lado-direito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-regis{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 35px;
+    background: #2f2b41;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.area-regis > h1{
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+}
+
+.campo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.campo > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 10pt;
+    box-sizing: border-box;
+}
+
+.campo > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.campo > input::placeholder{
+    color: #f0ffffde;
+}
+
+.titulo-gen{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.generos{
+    color: #fff;
+    font-size: 10pt;
+    margin: 0px;
+    background: #514869;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.botao-regis{
+    width: 50%;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #fff;
+    background: #0b68aa;
+    cursor: pointer;
+}
+
+.botao-regis:hover{
+    background-color: #08558b;
+    transition: .5s;
+}

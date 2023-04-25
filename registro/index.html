@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMM - Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validaSenha(){
+            const senha = document.querySelector('input[name=senha]')
+            const confirma = document.querySelector('input[name=confirma]')
+            if (confirma.value != senha.value){
+                alert('As senhas não conferem');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="img-area"></div>
+    <div class="principal">
+        <div class="lado-esquerdo">
+            <img src="logommm.png"  class="img-esquerda" alt="LOGO MMM">
+        </div>
+        <div class="lado-direito">
+            <div class="area-regis">
+                <h1>REGISTRO</h1>
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
+                </div>
+                <div class="campo"> 
+                    <label for="numero">Número de celular</label>
+                    <input type="tel" name="numero" id="numero" placeholder="(xx) xxxx-xxxx" autocomplete="off" required>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off" required>
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="campo">
+                    <label for="confirma">Confirme sua senha</label>
+                    <input type="password" name="confirma" id="confirma" placeholder="Confirme sua senha" required>
+                </div>
+                <button onclick="validaSenha();" type="submit" class="botao-regis">Concluído</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
